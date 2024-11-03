@@ -1,9 +1,9 @@
 # Jump-Game
 
 ## Estudo de joguinho em javascript
-###Línguagens usadas:
-HTML
-CSS
+### Línguagens usadas:
+HTML<br>
+CSS<br>
 JAVASVRIPT
 ### Fonte de Estudo:
 **Manual do Dev** - youtube <br>
