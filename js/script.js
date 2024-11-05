@@ -1,6 +1,8 @@
 const mario = document.querySelector(".mario");
 const poop = document.querySelector(".poop");
-
+var score =0;
+const pontos = document.querySelector(".score");
+pontos.innerHTML = "";
 
 const jump =() => {
 
@@ -16,7 +18,6 @@ const jump =() => {
 const loop = setInterval(()=>{
     const poopPosition = poop.offsetLeft;
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px','');
-   
     
     if(poopPosition <= 250 && marioPosition <64 && poopPosition >-2){
 
@@ -33,8 +34,18 @@ const loop = setInterval(()=>{
         clearInterval(loop);
 
     }
+    else{
+        score +=1;
+        pontos.innerHTML = `SCORE: ${score}`;
+        if(score>=500){
+            poop.style.animation = '1s';
+        }
+    }
+   
 
 }, 10)
+
+
 
 document.addEventListener('keydown', jump);
 

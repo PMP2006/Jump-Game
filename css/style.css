@@ -18,7 +18,8 @@
     bottom: -0.5em;
     width: 5%;
     
-    animation: poop-animation 2.5s infinite linear;
+    animation: poop-animation  infinite linear;
+    animation-duration: 2.5s;
 }
 
 .mario{
